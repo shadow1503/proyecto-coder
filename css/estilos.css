@@ -16,13 +16,13 @@ body {
 
 h1{
     color: #FF3EB4;
-    font-size: 700; /* 100/500/700 */
+   /* font-size: 700; /* 100/500/700 */
 
 }
 
 h2 {
     color: #FF3EB4;
-    font-size: 500;
+   /* font-size: 500;*/
 }
 
 h3 {
@@ -30,11 +30,15 @@ h3 {
 }
 
 h4{
+    /*font-size: 30px;*/
+}
+
+h5{
     font-size: 30px;
 }
 
 p {
-    font-size: 100;
+  /*  font-size: 100;*/
     line-height: 1.5;
 }
 
@@ -66,11 +70,7 @@ article {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-/*
-.logoimage{
-    
-}
-*/
+
 .navegacion {
     font-family: 'Roboto', sans-serif; 
     padding-right: 2rem;
@@ -95,6 +95,10 @@ article {
     height: 100%;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.logoimage:hover{
+    transform: scale(1.1);
 }
 
 
@@ -148,8 +152,7 @@ article {
     justify-items: center;
     align-items: center;
     justify-content: center;
-    align-content: center;   
-
+    align-content: center;
 }
 /*
 .caja__inicio{
@@ -157,6 +160,10 @@ article {
     margin-bottom: 10rem;
 }
 */
+
+.fondoPagina{
+    background-image: linear-gradient(180deg, #ffffff, #d6acad);   
+}
 
 .gridHijo1 {
     width: 100%;
@@ -166,7 +173,9 @@ article {
     justify-content: center;
     align-items: center;
     position: relative;
+  
 }
+
 
 
 
@@ -185,8 +194,12 @@ article {
 
 .gridHijo2Marcas {
     grid-area: ele3;
-    font-size: 40px;
+    font-size: 20px;
     text-align: left;
+}
+
+.gridHijo2Marcas:hover {
+    transform: scale(1.2);
 }
 
 
@@ -206,6 +219,13 @@ article {
     grid-area: ele4;
 }
 
+.gridHijo3Texto:hover {
+    transform: scale(1.2);
+}
+
+
+
+
 .caja__inicio__mapa {
     display: block;
     width: 100%;
@@ -221,6 +241,7 @@ article {
     object-fit: cover;
     object-position: top center;
 }
+
 
 .lista {
     font-family: 'Roboto', sans-serif;
@@ -241,6 +262,8 @@ article {
 .caja__inicio__horarios__texto{
     font-size: 40px;
 }
+
+
 
 .contacto{
     font-family: 'Roboto', sans-serif;
@@ -356,7 +379,7 @@ article {
         align-items: center;
         justify-content: center;
         align-content: center;    
-        padding-bottom: 4.5rem;        
+        padding-bottom: 12.5rem;        
     
 }
 
@@ -537,6 +560,7 @@ article {
 
 
 .gridHijo3TextoSpa{
+    padding-top: 3rem;
     font-size: 60px;
     grid-area: ele4;
 }
@@ -616,6 +640,8 @@ text-transform: none;
 
 }
 
+
+
 .faqTituloPregunta
 {
     font-size: 30px;;
@@ -632,6 +658,98 @@ text-transform: none;
     text-transform: uppercase;
 
 }
+
+.caja__faq__texto:hover {
+    transform: scale(1.035);
+}
+
+.caja__inicio__horarios:hover {
+    transform: scale(1.2);
+}
+
+
+.botonNavegacionEnlace{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+    font-size:large;
+    
+}
+
+
+.botonReservas{
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    color: #B10055; 
+    border-style: groove;
+    border-radius: 5px;
+    background-color: #FA8EC2;
+    align-content: center;
+    justify-items: center;
+    width: max-content;
+    letter-spacing: 3px;
+}
+
+.botonReservas:hover{
+    transform: scale(1.05);
+}
+
+/*
+.transitionFx{
+    transition: transform 2s;
+    }
+    
+*/
+
+.animacionImagenSuperior{
+    animation-name: efectoSuperior;
+    animation-duration: 1s;
+}
+
+.animacionImagenLateral{
+    animation-name: efectoLateral;
+    animation-duration: 4s;
+}
+
+.animacionTexto{
+    animation-name: efectoTexto;
+    animation-duration: 6s;
+}
+
+
+@keyframes efectoSuperior {
+    from{
+opacity: 0;
+    }
+
+    to{
+opacity: 1;
+    }
+}
+
+@keyframes efectoLateral {
+    from{
+opacity: 0;
+    }
+
+    to{
+opacity: 1;
+    }
+}
+
+@keyframes efectoTexto {
+    from{
+opacity: 0;
+    }
+
+    to{
+opacity: 1;
+    }
+}
+
+
 
 
 /* ESTILOS MOBILE */
