@@ -1,0 +1,789 @@
+/* PLANILLA DE ESTILOS WEB MISS UÑAS */
+
+/* Selector universal para todos los elementos HTML */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; /*aplicar fuente a todos los body */
+    
+}
+
+
+h1{
+    color: #FF3EB4;
+    font-size: 700; /* 100/500/700 */
+
+}
+
+h2 {
+    color: #FF3EB4;
+    font-size: 500;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    font-size: 30px;
+}
+
+p {
+    font-size: 100;
+    line-height: 1.5;
+}
+
+ol {
+    list-style-type: none;
+    }
+
+ul {
+    list-style-type: none;
+    }
+
+article {
+    padding: 50px 30px 20px 60px;
+    margin-left: 20px;
+    }
+
+.cabeceraFlex{
+    display: flex;
+    flex-direction: row;
+    background-color:#FA8EC2;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(97, 97, 97);
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    z-index: 3;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/*
+.logoimage{
+    
+}
+*/
+.navegacion {
+    font-family: 'Roboto', sans-serif; 
+    padding-right: 2rem;
+    width: 100%;
+    text-align: right;
+    word-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*border: 5px solid #FF3EB4 ; /* border: GROSOR / tipo / color */
+    }
+
+.navegacion__enlace{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white; 
+        padding-right: 1rem;
+    }
+    
+.banner-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.form-contacto {
+    color: black;
+    }
+
+
+
+
+
+.footer {
+    display: flex;
+    font-family: 'Roboto', sans-serif; 
+    background-color:#FA8EC2;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    height: 20%;
+    word-spacing: 1px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+      
+}
+/*
+.footer_imagen {
+    width: 80px;
+    height: 60px;
+    position: fixed;
+}
+*/
+.footer_texto {
+    text-align: right;
+}
+
+.gridInicio{
+    padding: 2rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-areas: 
+        "ele1 ele1"
+        "ele2 ele3"
+        "ele4 ele5"
+        "ele6 ele6";
+
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;   
+
+}
+/*
+.caja__inicio{
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+}
+*/
+
+.gridHijo1 {
+    width: 100%;
+    height: 100%;
+    grid-area: ele1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.gridHijo1Texto{
+        position: absolute;
+        left: 1rem;
+        color: rgba(255, 255, 255, 50);
+        text-shadow: 1;
+        font-size: 50px;
+        justify-content: center;
+        text-transform: uppercase;
+
+}
+
+
+
+.gridHijo2Marcas {
+    grid-area: ele3;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+.gridHijo2Titulo{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.logoMarcas{
+    grid-area: ele2;
+    background-color: #B10055;
+}
+
+.gridHijo3Texto{
+    text-transform: uppercase;
+    font-size: 60px;
+    grid-area: ele4;
+}
+
+.caja__inicio__mapa {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    grid-area: ele6;
+    
+}
+
+.gridImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.lista {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 1rem;
+   }
+
+.caja__inicio__horarios{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    grid-area: ele6;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja__inicio__horarios__texto{
+    font-size: 40px;
+}
+
+.contacto{
+    font-family: 'Roboto', sans-serif;
+}
+/*
+.caja__contacto__imagen {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+*/
+
+/*
+.caja__contacto{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: left;
+    font-size: 30px;
+    padding-right: 3rem;
+}
+*/
+.caja__faq{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-right: 5%;
+    padding-bottom: 10rem;
+}
+
+.caja__faq__imagen{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.caja__faq__texto{
+    line-height: 2rem;
+    padding-bottom: 20px;
+}
+
+.servicios__imagen{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.caja__servicios{
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    font-size: 30px;
+
+}
+
+.servicios {
+    color: black;
+}
+
+.servicios__tipo-servicios{
+    color:#B10055;
+    font-size: 100;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.caja__nosotros{
+    
+    /*padding-top: 2rem; */
+    padding-bottom: 5rem; 
+    font-size: 30px;
+
+}
+
+.caja__nosotros__imagen{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.caja__mapa{
+    width: 100%;
+    height: 100%;
+    grid-area: ele5;
+}
+
+.gridContactoPadre{
+        padding: 2rem;
+        padding-top: 6rem;
+        display: grid;
+        grid-template-rows: 25%, 75% ;
+        grid-template-columns:  repeat(1, 1fr);
+        grid-template-areas: 
+            "contactoFoto"
+            "contactoFormulario"
+            ;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;    
+        padding-bottom: 4.5rem;        
+    
+}
+
+.gridContactoHijo1{ /*CLASE PARA BANNERS INICIALES DE CADA PAGINA*/
+    grid-area: contactoFoto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:flex;
+    align-items: center;
+    position: relative;
+    max-height: 350px;
+}
+
+.gridContactoHijoTexto{
+    position: absolute;
+    left: 2rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.gridHijoContactoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: contactoFormulario;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.nosotrosGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25%, 75% ;
+    grid-template-areas: 
+    "imagen1"
+    "texto1";
+    padding: 2rem;
+    padding-top: 6rem;
+    justify-items: start;
+    row-gap: 1rem;
+}
+
+.hijoGridNosotros1{ /*BANNER SOBRE IMAGEN GRID*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: imagen1;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    max-height: 350px;
+
+}
+
+.gridImgNosotros {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.hijoGridNosotrosTexto{
+    height: 100%;
+    grid-area: texto1;
+    font-size: 30px;
+}
+
+.nosotrosGridTexto{
+    position: absolute;
+    left: 2rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
+
+
+
+.gridInicioServicios{
+    padding: 2rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-areas: 
+        "ele1 ele1"
+        "ele2 ele3"
+        "ele4 ele5"
+        "ele6 ele7";
+
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;   
+
+}
+
+
+.gridHijo1Servicios {
+    width: 100%;
+    height: 100%;
+    grid-area: ele1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gridImgServicios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+.gridHijo2Ventas {
+    grid-area: ele3;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+.gridHijoVentas{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.gridHijo1TextoServicios{
+    position: absolute;
+    left: 1rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
+
+.caja__inicio__cursos{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    grid-area: ele7;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridImgSpa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele2;
+
+}
+
+
+.gridImgSpa2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele5;
+}
+
+
+.gridHijo3TextoSpa{
+    font-size: 60px;
+    grid-area: ele4;
+}
+
+
+.caja__inicio__cursos{
+    font-size: 0px;
+    grid-area: ele7;
+
+}
+
+.gridCursoTexto {
+        grid-area: ele7;
+        font-size: 30px;
+        text-align: left;
+    }
+
+.gridCursoTexto {
+    text-transform: uppercase;
+}
+
+.lowerText{
+text-transform: none;
+}
+
+.gridImgCursos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele6;
+}
+
+.gridFaq{
+    padding: 2rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns:  repeat(1, 1fr);
+    grid-template-areas: 
+        "ele1"
+        "ele2";
+    row-gap: rem;
+    column-gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    align-content: center;  
+    padding-bottom: 5rem; 
+    
+
+}
+
+
+.gridFaq2{ /*BANNER SOBRE IMAGEN GRID*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele1;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    max-height: 350px;
+
+}
+
+.gridFaq3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-area: ele2;
+    text-align: center;
+    gap: 2rem;
+    padding-left: 0%;
+
+}
+
+.faqTituloPregunta
+{
+    font-size: 30px;;
+}
+
+
+.gridHijo1TextoFaq{
+    position: absolute;
+    left: 3rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
+
+
+/* ESTILOS MOBILE */
+
+@media screen and (max-width: 1023px) { /*VISTA PC*/
+    /*body{
+        background-color: #B10055;
+        
+    }*/
+    
+}
+
+@media screen and (max-width: 768px) { /*VISTA TABLET*/
+    .gridFaq3{
+        justify-content: center;
+        justify-items: center;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width: 425px) { /*Vista Mobile*/
+   /* body{
+        background-color: blue;
+        padding: 0%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        padding-left: 0%;
+        
+    }*/
+
+   /* header{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: baseline;
+        padding-left: 0%;
+        padding-bottom: 2rem;
+    }*/
+    .cabeceraFlex{
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+        margin-bottom: 10rem;
+        
+    }
+
+
+    .navegacion{
+        display: block;
+        object-fit: cover;
+        object-position: top center;
+
+    }
+
+    .listaHeader{
+        display: block;
+        text-align: center;
+        padding-left: 2rem;
+    
+    }
+    .gridHijo1Texto{
+        font-size: 20px;
+        margin: 1rem;
+        padding-top: 5rem;
+        justify-items: center;
+
+    }
+
+    .gridInicio{
+        padding-top: 11rem;
+        padding-bottom: 5rem;
+        display: grid;
+        grid-template-rows: repeat(6, 290px);
+        grid-template-columns:  repeat(1, 1fr);
+        grid-template-areas: 
+            "ele1"
+            "ele3"
+            "ele2"
+            "ele4"
+            "ele5"
+            "ele6"
+            "ele7"
+            "ele8";
+    
+        row-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;   
+        
+    }
+/*
+    .gridHijo3Texto{
+        
+    }
+*/
+    .caja__inicio__horarios{
+        padding-top: 10rem;
+        height: 60px;
+        font-size: 40px;
+        
+    }
+
+    .nosotrosGrid{
+        padding-top: 11rem;
+    }
+    
+    .gridInicioServicios{
+        padding-top: 11rem;
+    }
+
+    .gridInicioServicios{
+        padding: 2rem;
+        padding-top: 6rem;
+        display: grid;
+        grid-template-rows: repeat(4, 500px);
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-areas: 
+            "ele1 ele1"
+            "ele2 ele3"
+            "ele4 ele5"
+            "ele6 ele7";
+    
+        row-gap: 1rem;
+        column-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;   
+    
+    }
+ 
+    .gridFaq{
+        padding-top: 11rem;
+        padding-bottom: 20rem;
+
+    }
+
+    .gridHijo1TextoFaq{
+        padding-left: 0rem;
+    }
+
+    .gridFaq3{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20rem;
+    }
+
+}
