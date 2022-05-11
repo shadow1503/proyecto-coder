@@ -1,0 +1,21 @@
+{
+  "name": "miss-unas-garcia",
+  "version": "1.0.0",
+  "description": "probando sass",
+  "main": "index.js",
+  "scripts": {
+
+    "start": "sass ./scss/style.scss ./css/style.css -w --no-source-map -s compressed"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadow1503/demo.git"
+  },
+  "author": "Diego Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadow1503/demo/issues"
+  },
+  "homepage": "https://github.com/shadow1503/demo#readme"
+}
