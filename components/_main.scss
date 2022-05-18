@@ -73,24 +73,7 @@ article {
     }
 
 
-/*APLICANDO SASS */
-.navBarColor{
-    background-color:$bgColor;
-    &__footer {
-        display: flex;
-        font-family: 'Roboto', sans-serif; 
-        background-color:$bgColor;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        width: 100%;
-        height: 20%;
-        word-spacing: 1px;
-        justify-content: space-between;
-        justify-items: center;
-        align-items: center;
-    }
 
-}
 
 /*
 .footer_imagen {
@@ -99,10 +82,7 @@ article {
     position: fixed;
 }
 */
-.footer_texto {
-    padding-top: 3%;
-    text-align: right;
-}
+
 
 .gridInicio{
     /*padding: 2rem;*/
@@ -145,9 +125,6 @@ article {
   
 }
 
-
-
-
 .gridHijo1Texto{
         position: absolute;
         left: 12rem;
@@ -188,6 +165,35 @@ article {
     font-size: 60px;
     grid-area: ele4;
 }
+
+
+/*APLICANDO EXTEND*/
+.gridInicioTextosTemplate {
+    @extend .gridHijo3Texto;
+}
+
+
+/*APLICANDO MIXIN*/
+
+@mixin mixinLista ($tamanoLetra) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $tamanoLetra;
+    padding-top: 1rem;
+   }
+
+
+
+.lista {
+@include mixinLista (10px);
+   }
+
+    
+
+@each $heading in (h3, h4) {
+    #{$heading}{
+        text-transform: uppercase;
+    }
+}
 /*
 .gridHijo3Texto:hover {
     transform: scale(1.2);
@@ -213,11 +219,6 @@ article {
 }
 
 
-.lista {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding-top: 1rem;
-   }
 
 .caja__inicio__horarios{
     display: flex;
@@ -238,33 +239,7 @@ article {
 .contacto{
     font-family: 'Roboto', sans-serif;
 }
-/*
-.caja__contacto__imagen {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
 
-*/
-
-/*
-.caja__contacto{
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    text-align: left;
-    font-size: 30px;
-    padding-right: 3rem;
-}
-*/
-.caja__faq{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding-right: 5%;
-    padding-bottom: 10rem;
-}
 
 .caja__faq__imagen{
     display: block;
@@ -333,311 +308,13 @@ article {
     grid-area: ele5;
 }
 
-.gridContactoPadre{
-        padding: 2rem;
-        padding-top: 6rem;
-        display: grid;
-        grid-template-rows: 25%, 75% ;
-        grid-template-columns:  repeat(1, 1fr);
-        grid-template-areas: 
-            "contactoFoto"
-            "contactoFormulario"
-            ;
-        row-gap: 1rem;
-        column-gap: 1rem;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;    
-        padding-bottom: 12.5rem;        
-    
-}
-
-.gridContactoHijo1{ /*CLASE PARA BANNERS INICIALES DE CADA PAGINA*/
-    grid-area: contactoFoto;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display:flex;
-    align-items: center;
-    position: relative;
-    max-height: 350px;
-}
-
-.gridContactoHijoTexto{
-    position: absolute;
-    left: 2rem;
-    color: rgba(255, 255, 255, 50);
-    text-shadow: 1;
-    font-size: 50px;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-.gridHijoContactoForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: contactoFormulario;
-    justify-items: center;
-    align-items: center;
-    
-}
-
-.nosotrosGrid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25%, 75% ;
-    grid-template-areas: 
-    "imagen1"
-    "texto1";
-    padding: 2rem;
-    padding-top: 6rem;
-    justify-items: start;
-    row-gap: 1rem;
-}
-
-.hijoGridNosotros1{ /*BANNER SOBRE IMAGEN GRID*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    grid-area: imagen1;
-    display:flex;
-    align-items: center;
-    justify-items: center;
-    max-height: 350px;
-
-}
-
-.gridImgNosotros {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-}
-
-.hijoGridNosotrosTexto{
-    height: 100%;
-    grid-area: texto1;
-    font-size: 30px;
-}
-
-.nosotrosGridTexto{
-    position: absolute;
-    left: 2rem;
-    color: rgba(255, 255, 255, 50);
-    text-shadow: 1;
-    font-size: 50px;
-    justify-content: center;
-    text-transform: uppercase;
-
-}
 
 
 
-.gridInicioServicios{
-    padding: 2rem;
-    padding-top: 6rem;
-    display: grid;
-    grid-template-rows: repeat(4, 350px);
-    grid-template-columns:  repeat(2, 1fr);
-    grid-template-areas: 
-        "ele1 ele1"
-        "ele2 ele3"
-        "ele4 ele5"
-        "ele6 ele7";
-
-    row-gap: 1rem;
-    column-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;   
-
-}
-
-
-.gridHijo1Servicios {
-    width: 100%;
-    height: 100%;
-    grid-area: ele1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.gridImgServicios {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
-
-
-.gridHijo2Ventas {
-    grid-area: ele3;
-    font-size: 40px;
-    text-align: left;
-}
-
-
-.gridHijoVentas{
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.gridHijo1TextoServicios{
-    position: absolute;
-    left: 1rem;
-    color: rgba(255, 255, 255, 50);
-    text-shadow: 1;
-    font-size: 50px;
-    justify-content: center;
-    text-transform: uppercase;
-
-}
-
-.caja__inicio__cursos{
-    display: flex;
-    flex-direction: column;
-    font-size: 50px;
-    grid-area: ele7;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-}
-
-.gridImgSpa {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    grid-area: ele2;
-
-}
-
-
-.gridImgSpa2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    grid-area: ele5;
-}
-
-
-.gridHijo3TextoSpa{
-    padding-top: 3rem;
-    font-size: 60px;
-    grid-area: ele4;
-}
-
-
-.caja__inicio__cursos{
-    font-size: 0px;
-    grid-area: ele7;
-
-}
-
-.gridCursoTexto {
-        grid-area: ele7;
-        font-size: 30px;
-        text-align: left;
-    }
-
-.gridCursoTexto {
-    text-transform: uppercase;
-}
-
-.lowerText{
-text-transform: none;
-}
-
-.gridImgCursos {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    grid-area: ele6;
-}
-
-.gridFaq{
-    padding: 2rem;
-    padding-top: 6rem;
-    display: grid;
-    grid-template-rows: repeat(2, 350px);
-    grid-template-columns:  repeat(1, 1fr);
-    grid-template-areas: 
-        "ele1"
-        "ele2";
-    row-gap: rem;
-    column-gap: 1rem;
-    justify-items: center;
-    align-items: start;
-    justify-content: center;
-    align-content: center;  
-    padding-bottom: 5rem; 
-    
-
-}
-
-
-.gridFaq2{ /*BANNER SOBRE IMAGEN GRID*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    grid-area: ele1;
-    display:flex;
-    align-items: center;
-    justify-items: center;
-    max-height: 350px;
-
-}
-
-.gridFaq3{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    grid-area: ele2;
-    text-align: center;
-    gap: 2rem;
-    padding-left: 0%;
-
-}
 
 
 
-.faqTituloPregunta
-{
-    font-size: 30px;;
-}
 
-
-.gridHijo1TextoFaq{
-    position: absolute;
-    left: 3rem;
-    color: rgba(255, 255, 255, 50);
-    text-shadow: 1;
-    font-size: 50px;
-    justify-content: center;
-    text-transform: uppercase;
-
-}
-/*
-.caja__faq__texto:hover {
-    transform: scale(1.035);
-}
-
-.caja__inicio__horarios:hover {
-    transform: scale(1.2);
-}
-
-*/
 .botonNavegacionEnlace{
     display: flex;
     flex-direction: row;

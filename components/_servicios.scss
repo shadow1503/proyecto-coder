@@ -1,0 +1,126 @@
+
+.gridInicioServicios{
+    padding: 2rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-areas: 
+        "ele1 ele1"
+        "ele2 ele3"
+        "ele4 ele5"
+        "ele6 ele7";
+
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;   
+
+}
+
+.gridHijo1Servicios {
+    width: 100%;
+    height: 100%;
+    grid-area: ele1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gridImgServicios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+.gridHijo2Ventas {
+    grid-area: ele3;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+.gridHijoVentas{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.gridHijo1TextoServicios{
+    position: absolute;
+    left: 1rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
+
+.caja__inicio__cursos{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    grid-area: ele7;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridImgSpa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele2;
+
+}
+
+
+.gridImgSpa2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele5;
+}
+
+
+.gridHijo3TextoSpa{
+    padding-top: 3rem;
+    font-size: 60px;
+    grid-area: ele4;
+}
+
+
+.caja__inicio__cursos{
+    font-size: 0px;
+    grid-area: ele7;
+
+}
+
+.gridCursoTexto {
+        grid-area: ele7;
+        font-size: 30px;
+        text-align: left;
+    }
+
+.gridCursoTexto {
+    text-transform: uppercase;
+}
+
+.lowerText{
+text-transform: none;
+}
+
+.gridImgCursos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: ele6;
+}

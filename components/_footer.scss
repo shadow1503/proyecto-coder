@@ -50,7 +50,10 @@ article {
     margin-left: 20px;
     }
 
-
+    .footer_texto {
+        padding-top: 3%;
+        text-align: right;
+    }
 
 .navBarColor{
         background-color:#FA8EC2;
@@ -68,4 +71,20 @@ article {
             align-items: center;
         }
     
+}
+
+$rrss: (
+    whatsapp: #42EC67 ,
+    instagram: #c92d8f ,
+    facebook: #129AF6 ,
+);
+
+@each $name, $color in $rrss {
+    .#{$name}{
+        background-color: $color;
+        margin: 0 5px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 20px;
+    }
 }

@@ -1,0 +1,49 @@
+.nosotrosGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25%, 75% ;
+    grid-template-areas: 
+    "imagen1"
+    "texto1";
+    padding: 2rem;
+    padding-top: 6rem;
+    justify-items: start;
+    row-gap: 1rem;
+}
+
+.hijoGridNosotros1{ /*BANNER SOBRE IMAGEN GRID*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    grid-area: imagen1;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    max-height: 350px;
+
+}
+
+.gridImgNosotros {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.hijoGridNosotrosTexto{
+    height: 100%;
+    grid-area: texto1;
+    font-size: 30px;
+}
+
+.nosotrosGridTexto{
+    position: absolute;
+    left: 2rem;
+    color: rgba(255, 255, 255, 50);
+    text-shadow: 1;
+    font-size: 50px;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
